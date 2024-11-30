@@ -5,7 +5,7 @@ Follow these steps to set up and run the Finance Panel Boilerplate Template loca
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/finance-panel-boilerplate.git
+   git clone [https://github.com/yourusername/finance-panel-boilerplate.git](https://github.com/Egv2/finance-panel-template.git)
    ```
 
 2. **Navigate to the Project Directory**
@@ -87,8 +87,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or feedback, please contact [your.email@example.com](mailto:your.email@example.com).
+For any inquiries or feedback, please contact me.
 
----
-
-Thank you for using the Finance Panel Boilerplate Template! We hope it accelerates your project development and helps you build an outstanding financial dashboard.
