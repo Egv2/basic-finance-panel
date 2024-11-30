@@ -1,0 +1,177 @@
+.sidebar {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: inherit;
+  transition: width 0.3s;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar.closed {
+  width: 0;
+}
+
+.nav-link {
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.collapsible-menu {
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+}
+
+.collapsible-menu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.submenu {
+  padding-left: 30px;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  max-height: 0;
+  color: inherit;
+}
+
+.submenu.open {
+  max-height: 500px; /* Açılır menü genişliği için maksimum yükseklik */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-10 {
+    width: 82.333333% !important;
+  }
+}
+
+/* Menüler için dalga efekti ve ok simgesi */
+.has-arrow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.has-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.waves-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.waves-effect:after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  width: 0;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.waves-effect:hover:after {
+  width: 200%;
+}
+
+/* Açılır menüler için */
+.submenu {
+  padding-left: 30px;
+  transition: max-height 0.6s ease-out; /* Açılma ve kapanma hızı artırıldı */
+  overflow: hidden;
+  max-height: 0;
+  color: inherit;
+}
+
+.submenu.open {
+  max-height: 500px; /* Açılır menü genişliği için maksimum yükseklik */
+}
+
+/* Modal arka plan için blur efekti */
+.modal-backdrop.show {
+  backdrop-filter: blur(5px);
+}
+
+/* Tema Stillleri */
+.theme-light {
+  --background-color: #fff;
+  --text-color: #000;
+}
+
+.theme-dark {
+  --background-color: #343a40;
+  --text-color: #fff;
+}
+
+.theme-ocean {
+  --background-color: #d0efff;
+  --text-color: #000;
+}
+
+.theme-forest {
+  --background-color: #95d5b2;
+  --text-color: #000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Sidebar Toggle */
+.sidebar.closed {
+  display: none;
+}
+
+/* Responsive Yazı Büyüklüğü */
+body {
+  font-size: 16px; /* Default */
+}
+
+body {
+  font-size: 14px; /* Small */
+}
+
+body {
+  font-size: 18px; /* Large */
+}

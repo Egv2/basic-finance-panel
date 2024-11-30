@@ -1,0 +1,62 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  min-height: 100vh;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* ---- */
+
+
+/* Menüler için dalga efekti ve ok simgesi */
+.has-arrow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.has-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.waves-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.waves-effect:after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  width: 0;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.waves-effect:hover:after {
+  width: 200%;
+}
+
+/* Açılır menüler için */
+.submenu {
+  padding-left: 30px;
+  transition: max-height 0.6s ease-out; /* Açılma ve kapanma hızı artırıldı */
+  overflow: hidden;
+  max-height: 0;
+  color: inherit;
+}
+
+.submenu.open {
+  max-height: 500px; /* Açılır menü genişliği için maksimum yükseklik */
+}
