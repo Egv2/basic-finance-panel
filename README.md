@@ -1,6 +1,6 @@
 ## Installation
 
-Follow these steps to set up and run the Finance Panel Boilerplate Template locally:
+Follow these steps to set up and run my finance panel locally:
 
 1. **Clone the Repository**
 
@@ -85,7 +85,5 @@ This project is licensed under the [MIT License](LICENSE).
 - [Axios](https://axios-http.com/)
 - [React Select](https://react-select.com/)
 
-## Contact
 
-For any inquiries or feedback, please contact me.
 
